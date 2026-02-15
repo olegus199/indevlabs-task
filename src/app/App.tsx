@@ -1,5 +1,5 @@
 import { FC, useEffect } from 'react';
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from './MainLayout';
 import ProjectsList from '@/features/projects/ProjectsList';
 import ProjectDetails from '@/features/projects/ProjectDetails';
@@ -12,7 +12,7 @@ const App: FC = () => {
     }, []);
 
     return (
-        <HashRouter>
+        <BrowserRouter basename='/indevlabs-task'>
             <Routes>
                 <Route
                     path='/'
@@ -37,7 +37,7 @@ const App: FC = () => {
                     />
                 </Route>
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
 

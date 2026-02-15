@@ -60,6 +60,8 @@ describe('Main tests', () => {
             value: localStorageMock,
             writable: true
         });
+
+        window.history.pushState({}, '', '/indevlabs-task');
     });
 
     afterEach(() => {
@@ -72,7 +74,7 @@ describe('Main tests', () => {
 
         vi.clearAllMocks();
 
-        window.history.pushState({}, '', '/');
+        window.history.pushState({}, '', '/indevlabs-task');
     });
 
     describe('Projects list tests', () => {
@@ -155,7 +157,7 @@ describe('Main tests', () => {
         });
 
         it('Renders loading if loading', () => {
-            window.history.pushState({}, '', '/project/1');
+            window.history.pushState({}, '', 'indevlabs-task/project/1');
 
             mockUseProjectsReturnValue = {
                 projects: [...mockProjects],
