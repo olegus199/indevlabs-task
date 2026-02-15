@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { IProject } from './projectsTypes';
+import { IProject } from '@/components/projects/projectsTypes';
 import { PROJECTS_LOCAL_STORAGE_KEY } from '@/config';
 import { mockProjects } from '@/mockData';
 

@@ -1,4 +1,4 @@
-import { IProject, ProjectStatus } from './features/projects/projectsTypes';
+import { IProject, ProjectStatus } from './components/projects/projectsTypes';
 
 export const mockProjects: IProject[] = [
     {

@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import styles from './ProjectsList.module.scss';
-import useProjects from './useProjects';
+import useProjects from '@/hooks/useProjects';
 import Project from './Project';
 import { ATTRIBUTES } from '@/attributesForTests';
 

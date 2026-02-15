@@ -32,7 +32,7 @@ let mockUseProjectsReturnValue = {
     getProjectById: vi.fn(),
 };
 
-vi.mock('@/features/projects/useProjects', () => ({
+vi.mock('@/hooks/useProjects', () => ({
     default: vi.fn(() => mockUseProjectsReturnValue)
 }));
 
