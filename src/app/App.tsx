@@ -1,5 +1,5 @@
 import { FC, useEffect } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from './MainLayout';
 import ProjectsList from '@/features/projects/ProjectsList';
 import ProjectDetails from '@/features/projects/ProjectDetails';
@@ -12,7 +12,7 @@ const App: FC = () => {
     }, []);
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route
                     path='/'
@@ -37,7 +37,7 @@ const App: FC = () => {
                     />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
