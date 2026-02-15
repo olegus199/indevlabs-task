@@ -32,7 +32,7 @@ npm run dev
 ```
 http://localhost:5173
 ```
-5. Run tests
+6. Run tests
 ```bash
 pnpm run test
 ```
