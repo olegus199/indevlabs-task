@@ -3,7 +3,7 @@ import { IProject } from '@/components/projects/projectsTypes';
 import { PROJECTS_LOCAL_STORAGE_KEY } from '@/config';
 import { mockProjects } from '@/mockData';
 
-const useProjects = () => {
+export function useProjects() {
     const [projects, setProjects] = useState<IProject[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -41,5 +41,3 @@ const useProjects = () => {
 
     return { projects, isLoading, error, getProjectById }
 };
-
-export default useProjects;

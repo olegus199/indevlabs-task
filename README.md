@@ -28,9 +28,9 @@ or
 ```bash
 npm run dev
 ```
-5. Enter in your borwser
+5. Enter this in your borwser
 ```
-http://localhost:5173
+http://localhost:5173/indevlabs-task
 ```
 6. Run tests
 ```bash

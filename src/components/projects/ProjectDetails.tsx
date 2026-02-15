@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styles from './ProjectDetails.module.scss';
-import useProjects from '@/hooks/useProjects';
+import { useProjects } from '@/hooks/useProjects';
 import { Link, useParams } from 'react-router-dom';
 import { ATTRIBUTES } from '@/attributesForTests';
 

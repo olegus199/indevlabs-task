@@ -33,7 +33,7 @@ let mockUseProjectsReturnValue = {
 };
 
 vi.mock('@/hooks/useProjects', () => ({
-    default: vi.fn(() => mockUseProjectsReturnValue)
+    useProjects: vi.fn(() => mockUseProjectsReturnValue)
 }));
 
 const {
