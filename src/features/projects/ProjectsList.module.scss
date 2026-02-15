@@ -1,0 +1,45 @@
+@use '@/mixins' as *;
+
+$base-class: '.projects-list';
+
+#{$base-class}__input {
+  width: 100%;
+  max-width: 20rem;
+  margin-bottom: 1.5rem;
+  padding: .75rem .875rem;
+
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  border: .0625rem solid $neutral-300;
+  border-radius: .5rem;
+  color: $main-black;
+  background-color: $main-white;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $neutral-400;
+  }
+
+}
+
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}

@@ -1,0 +1,19 @@
+@use "@/mixins" as *;
+
+$base-class: '.main-layout';
+
+#{$base-class} {
+  padding: 3rem 1rem;
+}
+
+#{$base-class}__content-container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+#{$base-class}__h1 {
+  width: fit-content;
+  margin: 0 auto 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+}

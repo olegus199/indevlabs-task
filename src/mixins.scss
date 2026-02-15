@@ -1,0 +1,51 @@
+@forward './variables';
+@use './variables' as *;
+
+@mixin flex-center($gap: 0px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-space-between($gap: 0px, $align-items: center) {
+  display: flex;
+  justify-content: space-between;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin flex-column($gap: 0px, $align-items: center, $justify-content: unset) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin flex-align-center($gap: 0px) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin reset-button-defaults($font-size: 1rem) {
+  display: block;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: $font-size;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin link() {
+  width: fit-content;
+  color: $primary-blue-500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,35 @@
+@use '@/mixins' as *;
+
+$base-class: '.project';
+
+#{$base-class} {
+  @include flex-column(.875rem, stretch);
+
+  padding: 1.5rem;
+  background-color: $main-white;
+  border-radius: 1rem;
+  box-shadow: $light-shadow;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+#{$base-class}__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#{$base-class}__status {
+  color: $neutral-500;
+  font-weight: 500;
+}
+
+#{$base-class}__description {
+  font-size: .875rem;
+  color: $neutral-700;
+}
+
+#{$base-class}__link {
+  @include link();
+}

@@ -1,0 +1,28 @@
+@use '@/mixins' as *;
+
+$base-class: '.projects-details';
+
+#{$base-class} {
+  @include flex-column(1.5rem, stretch);
+}
+
+#{$base-class}__title {
+  font-size: 1.75rem;
+}
+
+#{$base-class}__description {
+  color: $neutral-700;
+}
+
+#{$base-class}__status {
+  color: $neutral-700;
+
+  span {
+    font-weight: 500;
+    color: $main-black;
+  }
+}
+
+#{$base-class}__link {
+  @include link();
+}
